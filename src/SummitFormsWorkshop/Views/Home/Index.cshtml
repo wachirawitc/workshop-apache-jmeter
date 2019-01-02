@@ -1,5 +1,27 @@
-﻿@{
+﻿@model SummitFormsWorkshop.ViewModels.InformationViewModel
+@{
 	ViewData["Title"] = "Home Page";
 }
 
 <h1>Summit Forms Workshop</h1>
+<div style="width: 100%;">
+	<form asp-controller="Home" asp-action="Information" method="post">
+
+		<div style="width: 100%;">
+			Prefix
+			<select asp-for="Prefix" asp-items="Model.Prefixes"></select>
+		</div>
+
+		<div style="width: 100%;">
+			First Name
+			<input type="text" asp-for="FirstName" />
+		</div>
+
+		<div style="width: 100%;">
+			Last Name
+			<input type="text" asp-for="LastName" />
+		</div>
+
+		<input type="submit" value="Save" />
+	</form>
+</div>
