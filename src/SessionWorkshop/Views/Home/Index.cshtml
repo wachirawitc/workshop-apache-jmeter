@@ -1,5 +1,40 @@
-﻿@{
+﻿@using SessionWorkshop.Infrastructures.Interfaces
+@model SessionWorkshop.ViewModels.LoginViewModel
+@inject ISessionContext SessionContext
+@{
 	ViewData["Title"] = "Home Page";
 }
 
 <h1>Session Workshop</h1>
+
+@if (SessionContext.IsAuthentication == false)
+{
+	<form method="post" asp-controller="Home" asp-action="Login">
+		<div style="width: 100%;">
+
+			<div style="width: 100%">
+				<div asp-validation-summary="All"></div>
+			</div>
+
+			<div style="width: 100%">
+				Username
+				<input type="text" asp-for="Username" />
+			</div>
+
+			<div style="width: 100%">
+				Password
+				<input type="text" asp-for="Password" />
+			</div>
+
+			<div style="width: 100%">
+				<input type="submit" value="Login" />
+			</div>
+		</div>
+	</form>
+}
+else
+{
+	<div style="width: 100%;">
+	 Login as @SessionContext.Username
+	</div>
+}
