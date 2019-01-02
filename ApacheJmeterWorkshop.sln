@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieWorkshop", "src\Cooki
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UploadWorkshop", "src\UploadWorkshop\UploadWorkshop.csproj", "{E73D4384-7CFD-44A1-A603-B0A91B3AD563}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SummitFormsWorkshop", "src\SummitFormsWorkshop\SummitFormsWorkshop.csproj", "{263BE9BC-4C05-44C8-B9FF-97C6E9B7F2CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{E73D4384-7CFD-44A1-A603-B0A91B3AD563}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E73D4384-7CFD-44A1-A603-B0A91B3AD563}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E73D4384-7CFD-44A1-A603-B0A91B3AD563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{263BE9BC-4C05-44C8-B9FF-97C6E9B7F2CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263BE9BC-4C05-44C8-B9FF-97C6E9B7F2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263BE9BC-4C05-44C8-B9FF-97C6E9B7F2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263BE9BC-4C05-44C8-B9FF-97C6E9B7F2CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{D8A132D3-D779-475B-820E-6A5B94FA4AB6} = {C8A360D0-7114-470D-B814-657BF0FAB8B9}
 		{15255FD5-1917-4D74-A461-1CB51AAF58E1} = {C8A360D0-7114-470D-B814-657BF0FAB8B9}
 		{E73D4384-7CFD-44A1-A603-B0A91B3AD563} = {C8A360D0-7114-470D-B814-657BF0FAB8B9}
+		{263BE9BC-4C05-44C8-B9FF-97C6E9B7F2CC} = {C8A360D0-7114-470D-B814-657BF0FAB8B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {79F27051-C216-4196-A823-921DCB2FC9F7}
