@@ -1,5 +1,12 @@
-﻿@{
+﻿@model UploadWorkshop.ViewModels.UploadViewModel
+
+@{
 	ViewData["Title"] = "Home Page";
 }
 
 <h1>Upload Workshop</h1>
+
+<form asp-controller="Home" asp-action="Upload" method="post" enctype="multipart/form-data">
+	<input asp-for="File" type="file" multiple />
+	<input type="submit" value="Upload" />
+</form>
