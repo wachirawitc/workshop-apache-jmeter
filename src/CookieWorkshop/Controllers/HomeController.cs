@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace CookieWorkshop.Controllers
 {
@@ -7,6 +8,17 @@ namespace CookieWorkshop.Controllers
 		public IActionResult Index()
 		{
 			return View();
+		}
+
+		public OkObjectResult Cookies()
+		{
+			var model = Request.Cookies.Select(x => new
+			{
+				x.Key,
+				x.Value
+			}).ToList();
+
+			return Ok(new { model });
 		}
 	}
 }
