@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpRequesterWorkshop", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieWorkshop", "src\CookieWorkshop\CookieWorkshop.csproj", "{15255FD5-1917-4D74-A461-1CB51AAF58E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UploadWorkshop", "src\UploadWorkshop\UploadWorkshop.csproj", "{E73D4384-7CFD-44A1-A603-B0A91B3AD563}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{15255FD5-1917-4D74-A461-1CB51AAF58E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15255FD5-1917-4D74-A461-1CB51AAF58E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15255FD5-1917-4D74-A461-1CB51AAF58E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73D4384-7CFD-44A1-A603-B0A91B3AD563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73D4384-7CFD-44A1-A603-B0A91B3AD563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73D4384-7CFD-44A1-A603-B0A91B3AD563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73D4384-7CFD-44A1-A603-B0A91B3AD563}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D8A132D3-D779-475B-820E-6A5B94FA4AB6} = {C8A360D0-7114-470D-B814-657BF0FAB8B9}
 		{15255FD5-1917-4D74-A461-1CB51AAF58E1} = {C8A360D0-7114-470D-B814-657BF0FAB8B9}
+		{E73D4384-7CFD-44A1-A603-B0A91B3AD563} = {C8A360D0-7114-470D-B814-657BF0FAB8B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {79F27051-C216-4196-A823-921DCB2FC9F7}
