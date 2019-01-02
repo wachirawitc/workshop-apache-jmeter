@@ -10,3 +10,14 @@
 	<input asp-for="File" type="file" multiple />
 	<input type="submit" value="Upload" />
 </form>
+
+<ul>
+	@foreach (var file in Model.ExitsFiles)
+	{
+		<li>
+			<a target="_blank" href="@file">
+				@file
+			</a>
+		</li>
+	}
+</ul>

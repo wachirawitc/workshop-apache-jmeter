@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using UploadWorkshop.ViewModels;
 
@@ -11,6 +12,14 @@ namespace UploadWorkshop.Controllers
 		public IActionResult Index()
 		{
 			var model = new UploadViewModel();
+
+			var files = Directory
+				.EnumerateFiles(hostingEnvironment.WebRootPath)
+				.Select(x => new FileInfo(x).Name)
+				.ToList();
+
+			model.ExitsFiles.AddRange(files);
+
 			return View(model);
 		}
 
